@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	gbox-sizing: border-box;
 }
 
 body, html {
@@ -80,37 +81,16 @@ nav {
 article {
 	width: 80%;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: flex-start;
 	padding: 10px;
+
 }
 
-.article-first {
-	width: 100%;
-	height: 40%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
-	margin-bottom: 10px;
-}
-
-.left {
+.image {
 	background: #FFBD00;
 	width: 45%;
-	height: 100%;
+	height: 40%;
 	margin: 5px;
-}
-
-.right {
-	width: 60%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-content: flex-start;
+	float: left;
 }
 
 .conten-title {
@@ -118,21 +98,7 @@ article {
 	width: 100%;
 	height: 15%;
 	margin: 5px;
-}
-.content-right {
-	background: #CECECE;
-	width: 100%;
-	height: 13%;
-	margin: 5px;
-}
-
-.article-second {
-	width: 100%;
-	height: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: flex-start;
+	overflow: hidden;
 }
 
 .content {
@@ -140,11 +106,11 @@ article {
 	width: 100%;
 	height: 10%;
 	margin: 5px;
+	overflow: hidden;
 }
 
 
 /*___This is footer___*/
-
 footer {
 	background: #00D169;
 	width: 100%;
